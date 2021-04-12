@@ -1,0 +1,465 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url('../font/Nexa/NexaLight.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('../font/Nexa/NexaBold.otf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Nexa", Helvetica, Arial, sans-serif;
+}
+
+main {
+    margin-bottom: 100px;
+}
+
+h1, h2 {
+    color:orange;
+}
+
+/*----------Begin van de navbar------------*/
+
+#mainPageList {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #000000;
+    position: top;
+    text-decoration: none;
+}
+
+#mainPageListItem {
+    float: right;
+    font-size: 24px;
+}
+
+#mainPageListItemLogo {
+    float: left;
+    width: 2%;
+    height: 60px;
+    padding: 0px 5% 0px 5%;
+}
+
+#mainPageListItem a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5% 36px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#mainPageListItem a:hover {
+  background-color: orange;
+}
+
+/*----------Einde van de navbar------------*/
+
+/*------------Begin caroussel------------*/
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -40px;
+    padding: 16px;
+    color: orange;
+    font-weight: bold;
+    font-size: 28px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 28px;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.mySlides,img {
+    width: 100%;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .1}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .1}
+    to {opacity: 1}
+}
+
+/*----------Einde van de caroussel------------*/
+
+
+/*------------Begin content home------------*/
+
+#contentBox {
+    display: flex;
+    flex direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-content: center;
+}
+
+#contentBox h2 {
+    display: flex;
+    color: orange;
+    font-family: "Nexa", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+}
+
+#contentBox img {
+    display: flex;
+    max-width: 300px;
+}
+
+#imgEvent {
+    max-width: 300px;
+}
+
+/*----------Einde content home------------*/
+
+/*--------- Begin opmaak Bieren --------------*/
+
+#bieren {
+	color: #ffffff;
+	background-color: black;
+    align-content: center;
+}
+
+#bieren h1 {
+	font-family: Nexa, sans-serif;
+	font-size: 36px;
+}
+
+#bier1info1 p {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+
+}
+
+#bieren h2 {
+	font-family: Nexa, sans-serif;
+	font-size: 24px;
+	margin-top: 20px;
+}
+
+#aantal {
+	height: 40px;
+	width: relative;
+	font-family: Nexa, sans-serif;
+	font-size: 24px;
+    display: block;
+}
+
+#bier1info2 input[type=submit] {
+	height: 45px;
+	width: 80%;
+	background-color: orange;
+	border: 0px;
+	font-family: Nexa, sans-serif;
+	font-size: 16px;
+	margin-top: 20px;
+    
+}
+
+#bier1 {
+	width: 100%;
+	clear: both;
+}
+
+#bier1image img {
+    max-height: 300px;
+    max-width: 150px;
+	margin-left: 20%;
+	margin-top: 200px;
+	float: left;
+}
+
+#bier1info1 {
+	float: left;
+	width: 35%;
+	margin-top: 100px;
+	margin-left: 50px;
+}
+
+#bier1info2 {
+	float: left;
+	margin-top: 200px;
+	margin-left: 10%;
+}
+
+#bier2, #bier3, #bier4, #bier5, #bier6 {
+	width: 100%;
+	clear: both;
+}
+
+#bier6{
+    margin-bottom: 500px;
+}
+
+
+
+/*--------- Einde opmaak Bieren --------------*/
+
+
+/*------------Begin reviewpagina------------*/
+#reviewContent {
+    box-sizing: border-box;
+    min-height: 300px;
+    min-width: 300px;
+    width: 50%;
+    float: inherit;
+    margin-top: 100px;
+    margin-left: 400px;
+}
+
+#reviewContent p {
+    float: right;
+    text-align: left;
+    margin-right: 100px;
+    margin-top: 50px;
+    max-width: 400px;
+}
+
+#reviewContent h2 {
+    text-align: center;
+    color:orange;
+    font-family: "Nexa", Helvetica, Arial, sans-serif;
+    padding-left: 100px;
+    font-size: 36px;
+}
+
+
+#imgReview {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+/*------------Einde reviewpagina------------*/
+
+/*------------Begin Accountpagina------------*/
+
+#formHead {
+    text-align: center;
+}
+
+label {
+    position: relative;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: Nexa, sans-serif;
+    display: block;
+    text-align: center;
+    width: 30%;
+    min-width: 200px;
+    margin-left: 35%;
+}
+
+form input[type=text], form input[type=email], form input[type=submit]{
+    height: 50px;
+    width: 30%;
+    min-width: 200px;
+    background-color: white;
+    font-family: Nexa, sans-serif;
+    font-size: 16px;
+    margin-left: 35%;
+    border: 0px;
+    margin-top: 10px;
+    margin-bottom: 20px
+}
+
+form input[type=submit] {
+    background-color: orange;
+    width: 20%;
+    min-width: 200px;
+    float: right;
+    margin-right: 40%;
+    margin-top: 50px;
+}
+
+#checker {
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+}
+
+#nieuwsbriefLabel {
+    height: 10px;
+    width: 20%;
+    margin-left: 40%;
+}
+
+/*------------Einde Accountpagina------------*/
+
+/*------------Begin Winkelwagen------------*/
+#product1 img, #product2 img, #product3 img {
+    height: 180px;
+    width: 170px;
+    float: left;
+    margin-left: 420px;
+    margin-top: 25px;
+}
+
+#product h2 {
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    padding-left: 30px;
+    height: 50px;
+    display: inline;
+}
+
+#aantalBrute input[type=number]{
+    height: 40px;
+    width: 90px;
+    font-family: Poppins, sans-serif;
+    font-size: 24px;
+    margin-left: 130px;
+    margin-top: 95px;
+    display:inline;
+}
+
+#aantalR {
+    margin-left: 160px;
+}
+
+#aantalRS {
+    margin-left: 230px;
+}
+
+#product1 p, #product2 p, #product3 p {
+    font-family: nexa, sans-serif;
+    font-size: 1.5em;
+    display: inline;
+    margin-right: 85px;
+}
+
+hr {
+    clear: left;
+    margin-left: 420px;
+    padding-top: 20px;
+    width: 935px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+/* Voor de betaalmethode */
+#headProduct {
+    font-family: Nexa, sans-serif;
+    font-size: 24px;
+    margin-left: 1150px;
+    margin-top: 50px;
+}
+
+#afrekenen{
+    width: 140px;
+    height: 60px;
+    font-family: nexa, sans-serif;
+    font-size: 24px;
+    background-color: orange;
+    border: 0px;
+    margin-left: 1220px;
+    margin-top: 25px;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+/*------------Einde Winkelwagen------------*/
+
+/*------------Begin footer------------*/
+
+footer {
+    display: flex;
+	background-color: orange;
+	font-size: 1em;
+    color: #000000;
+    font-family: nexa, sans-serif;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;    
+}
+ 
+footer li{
+    list-style: none;
+}
+
+#footerInfo, footerNavList {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#footerInfo {
+    margin-top: 10px;
+}
+
+#footerSocials {
+    flex-direction: column;
+}
+
+#footerSocials img {
+    height: 20px;
+    width: 20px;
+}
+
+#footerInfoItem {
+    margin-top: 5px;
+}
+
+#footerInfoItem a {
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#imageListSocials li{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+#imagelist {
+    float: left;
+}
