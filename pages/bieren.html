@@ -12,19 +12,16 @@
         </script>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul id="mainPageList">
-                    <li id="mainPageListItemLogo"><img id="logo" src="../afbeeldingen/logo/kwartje-logo-vector.svg"><a href="#"></a></li>
-                    <li id="mainPageListItem"><a href="../pages/winkelwagen.html">Winkelwagen</a></li>
-                    <li id="mainPageListItem"><a href="../pages/account.html">Account</a></li>
-                    <li id="mainPageListItem"><a href="../pages/events.html">Events</a></li>
-                    <li id="mainPageListItem"><a href="../pages/reviews.html">Reviews</a></li>
-                    <li id="mainPageListItem"><a href="#">Bieren</a></li>
-                    <li id="mainPageListItem"><a href="../index.html">Home</a></li>
-                </ul>        
+
+            <nav id="topNav">
+                <img id="logo" src="../afbeeldingen/logo/kwartje-logo-vector.svg" alt="logo">
+                <a href="#">Winkelwagen</a>
+                <a href="../pages/account.html">Account</a>
+                <a href="../pages/events.html">Events</a>
+                <a href="../pages/bieren.html">Bieren</a>
+                <a href="../index.html">Home</a>       
             </nav>
-        </header>
+
         <main>
             <div id="bieren">
                 <!-- Het eerste artikel over Brute Force -->
@@ -50,10 +47,10 @@
 					
                     <!-- Het tweede artikel over Ref5resh -->
 					<article id="bier2">
-						<aside id="bier1image">
+						<aside id="bier2image">
 							<img src="../afbeeldingen/bieren/refresh.jpg"/>
 						</aside>
-						<aside id="bier1info1">
+						<aside id="bier2info1">
 							<h1>Ref5resh</h1>
 							<p>Kwartje Refresh is een verkwikkend bier. het bier is op smaak gebracht met extra hop. Het is vooral een fris bier.</p>
                                                             
@@ -71,16 +68,16 @@
 					
                     <!-- Het derde artikel over Firewire -->
 					<article id="bier3">
-						<aside id="bier1image">
+						<aside id="bier3image">
 							<img src="../afbeeldingen/bieren/Firewire.png"/>
 						</aside>
-						<aside id="bier1info1">
+						<aside id="bier3info1">
 							<h1>Firewire</h1>
 							<p>Kwartje Firewire is een smoked porter, een donkerkleurig bier met rokerige aroma's. Dit bovengistende bier is zeer krachtig qua smaak en heeft als je dat afzet tegen de smaak met 5,5% maar weinig alcohol.</p>
                                                             
                             <p>Dit biertje is verkrijgbaar en is 5.5% vol</p>
 						</aside>
-						<aside id="bier1info2">
+						<aside id="bier3info2">
 							<h2>Prijs &euro;2 per stuk</h2>
 							<h2>Aantal</h2>
 							<input type="number" name="aantal" id="aantal" step="1" min="1" max="100" value="1"/>
@@ -91,16 +88,16 @@
                     
                     <!-- Het derde artikel over RSI -->
                     <article id="bier4">
-						<aside id="bier1image">
+						<aside id="bier4image">
 							<img src="../afbeeldingen/bieren/RSI.png"/>
 						</aside>
-						<aside id="bier1info1">
+						<aside id="bier4info1">
 							<h1>RSI</h1>
 							<p>Kwartje RSI is een Smoked Rye India Pale Ale, ofwel een IPA gebrouwen met rogge en roukmout. Een bier met een zeer uitgesproken smaak.</p>
                                                             
                             <p>Dit biertje is verkrijgbaar en is 6.5% vol</p>
 						</aside>
-						<aside id="bier1info2">
+						<aside id="bier4info2">
 							<h2>Prijs &euro;2 per stuk</h2>
 							<h2>Aantal</h2>
 							<input type="number" name="aantal" id="aantal" step="1" min="1" max="100" value="1"/>
@@ -111,10 +108,10 @@
                     
                     <!-- Het derde artikel over Wildcard -->
                     <article id="bier5">
-						<aside id="bier1image">
+						<aside id="bier5image">
 							<img src="../afbeeldingen/bieren/Wildcard.png"/>
 						</aside>
-						<aside id="bier1info1">
+						<aside id="bier5info1">
 							<h1>Wildcard</h1>
 							<p>Om de een of andere reden kan ik van dit biertje nergens een omschrijving vinden, daarom een leuke grap: Ik liep net langs een boom en hoorde ineens een stemmetje dingen zeggen als "Ik zie het niet meer zitten" en "Ik heb er geen kracht meer voor".</p>
 
@@ -122,7 +119,7 @@
                                                             
                             <p>Dit biertje is verkrijgbaar en is 10% vol</p>
 						</aside>
-						<aside id="bier1info2">
+						<aside id="bier5info2">
 							<h2>Prijs &euro;2 per stuk</h2>
 							<h2>Aantal</h2>
 							<input type="number" name="aantal" id="aantal" step="1" min="1" max="100" value="1"/>
@@ -133,16 +130,16 @@
                     
                     <!-- Het derde artikel over DDOS -->
                     <article id="bier6">
-						<aside id="bier1image">
+						<aside id="bier6image">
 							<img src="../afbeeldingen/bieren/DDOS.png"/>
 						</aside>
-						<aside id="bier1info1">
+						<aside id="bier6info1">
 							<h1>Fust DDOS</h1>
 							<p>Kwartje DDOS is een oatmeal stout. In het brouwproces is haver (oatmeal) gebruikt. Je proeft dit door het volmondige, ronde karakter van deze stevige, smaakvolle jongen.</p>
                                                             
                             <p>Dit biertje is verkrijgbaar en is 8.2% vol</p>
 						</aside>
-						<aside id="bier1info2">
+						<aside id="bier6info2">
 							<h2>Prijs &euro;2 per stuk</h2>
 							<h2>Aantal</h2>
 							<input type="number" name="aantal" id="aantal" step="1" min="1" max="100" value="1"/>
@@ -189,14 +186,12 @@
             
             <div id="footerInfoNavigatie">
                 <ul id="footerNavList">
-                    <li id="footerInfoItem"><a href="../pages/winkelwagen.html">Winkelwagen</a></li>
-                    <li id="footerInfoItem"><a href="../pages/account.html">Account</a></li>
-                    <li id="footerInfoItem"><a href="../pages/events.html">Events</a></li>
-                    <li id="footerInfoItem"><a href="../pages/bieren.html">Bieren</a></li>
-                    <li id="footerInfoItem"><a href="../index.html">Home</a></li>
-                    </ul>
-            
-            
+                    <li id="footerInfoNavItem"><a href="../pages/winkelwagen.html">Winkelwagen</a></li>
+                    <li id="footerInfoNavItem"><a href="../pages/account.html">Account</a></li>
+                    <li id="footerInfoNavItem"><a href="../pages/events.html">Events</a></li>
+                    <li id="footerInfoNavItem"><a href="../pages/bieren.html">Bieren</a></li>
+                    <li id="footerInfoNavItem"><a href="../index.html">Home</a></li>
+                </ul>
             </div>
         </footer>
     </body>

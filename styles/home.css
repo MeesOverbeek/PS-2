@@ -28,38 +28,34 @@ h1, h2 {
 
 /*----------Begin van de navbar------------*/
 
-#mainPageList {
+#topNav {
     list-style-type: none;
-    margin: 0;
-    padding: 20px;
     overflow: hidden;
     background-color: #000000;
     position: top;
     text-decoration: none;
 }
 
-#mainPageListItem {
+#topNav a {
+    display: block;
     float: right;
     font-size: 24px;
-}
-
-#mainPageListItemLogo {
-    float: left;
-    width: 2%;
-    height: 60px;
-    padding: 0px 5% 0px 5%;
-}
-
-#mainPageListItem a {
-    display: block;
     color: white;
     text-align: center;
-    padding: 5% 36px;
+    padding: 12px 2%;
+    margin-bottom: 10px;
     text-decoration: none;
     transition: 0.3s;
 }
 
-#mainPageListItem a:hover {
+#topNav img {
+    float: left;
+    width: 5%;
+    max-height: 48px;
+    padding: 0px 5% 0px 5%;
+}
+
+#topNav a:hover {
   background-color: orange;
 }
 
@@ -73,6 +69,10 @@ h1, h2 {
 
 .mySlides {
     display: none;
+}
+
+.dot {
+    text-align: center;
 }
 
 .prev, .next {
@@ -127,28 +127,33 @@ h1, h2 {
 
 /*------------Begin content home------------*/
 
-#contentBox {
-    display: flex;
-    flex direction: row;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    align-content: center;
+#contentBox1, #contentBox2, #contentBox3 {
+    box-sizing: border-box;
+    width: 50%;
+    margin-top: 100px;
+    padding: 1px 1px 1px 1px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
-#contentBox h2 {
-    display: flex;
-    color: orange;
+#contentBox1 h2, #contentBox2 h2, #contentBox3 h2 {
+	text-align: center;
+    color:orange;
     font-family: "Nexa", Helvetica, Arial, sans-serif;
     font-size: 36px;
 }
 
-#contentBox img {
-    display: flex;
+#imgHome1, #imgHome2, #imgHome3 {
+    float: left;
     max-width: 300px;
+    max-height: 300px;
+    margin-right: 50px;
 }
 
-#imgEvent {
-    max-width: 300px;
+#contentBox1 p, #contentBox2 p, #contentBox3 p {
+    margin-top: 50px;
+    margin-right: 20%;
+    text-align: center;
 }
 
 /*----------Einde content home------------*/
@@ -158,26 +163,25 @@ h1, h2 {
 #bieren {
 	color: #ffffff;
 	background-color: black;
-    align-content: center;
 }
 
 #bieren h1 {
+    display: block;
 	font-family: Nexa, sans-serif;
 	font-size: 36px;
-}
-
-#bier1info1 p {
-    text-align: left;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 50px;
-
+    text-align: center;
 }
 
 #bieren h2 {
 	font-family: Nexa, sans-serif;
 	font-size: 24px;
 	margin-top: 20px;
+}
+
+#bieren p {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #aantal {
@@ -188,7 +192,7 @@ h1, h2 {
     display: block;
 }
 
-#bier1info2 input[type=submit] {
+#bieren input[type=submit] {
 	height: 45px;
 	width: 80%;
 	background-color: orange;
@@ -199,78 +203,80 @@ h1, h2 {
     
 }
 
-#bier1 {
+#bier1, #bier2, #bier3, #bier4, #bier5 {
 	width: 100%;
 	clear: both;
 }
 
-#bier1image img {
+#bier6{
+    width: 100%;
+	clear: both;
+    margin-bottom: 500px;
+}
+
+#bier1image img, #bier2image img, #bier3image img, #bier4image img, #bier5image img, #bier6image img {
     max-height: 300px;
-    max-width: 150px;
+    max-width: 120px;
 	margin-left: 20%;
 	margin-top: 200px;
 	float: left;
 }
 
-#bier1info1 {
+#bier1info1, #bier2info1, #bier3info1, #bier4info1, #bier5info1, #bier6info1 {
 	float: left;
 	width: 35%;
 	margin-top: 100px;
 	margin-left: 50px;
 }
 
-#bier1info2 {
+#bier1info2, #bier2info2, #bier3info2, #bier4info2, #bier5info2, #bier6info2 {
 	float: left;
 	margin-top: 200px;
 	margin-left: 10%;
 }
 
-#bier2, #bier3, #bier4, #bier5, #bier6 {
-	width: 100%;
-	clear: both;
-}
-
-#bier6{
-    margin-bottom: 500px;
-}
-
-
-
 /*--------- Einde opmaak Bieren --------------*/
+
+/*--------- Begin opmaak Events --------------*/
+
+
+
+
+/*------------Einde opmaak Events------------*/
 
 
 /*------------Begin reviewpagina------------*/
-#reviewContent {
+#reviewContent1, #reviewContent2, #reviewContent3, #reviewContent4 {
     box-sizing: border-box;
-    min-height: 300px;
-    min-width: 300px;
     width: 50%;
-    float: inherit;
     margin-top: 100px;
-    margin-left: 400px;
+    padding: 1px 1px 1px 1px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
-#reviewContent p {
-    float: right;
-    text-align: left;
+#reviewContent1 p, #reviewContent2 p, #reviewContent3 p, #reviewContent4 p {
+    text-align: center;
     margin-right: 100px;
     margin-top: 50px;
-    max-width: 400px;
 }
 
-#reviewContent h2 {
+#reviewContent1 h2, #reviewContent2 h2, #reviewContent3 h2, #reviewContent4 h2 {
     text-align: center;
     color:orange;
     font-family: "Nexa", Helvetica, Arial, sans-serif;
-    padding-left: 100px;
     font-size: 36px;
 }
 
-
-#imgReview {
-    width: 200px;
-    height: 200px;
+#imgReview1, #imgReview2, #imgReview3, #imgReview4 {
     float: left;
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: 50px;
+}
+
+#imgReview4 {
+    margin-bottom: 100px;
 }
 /*------------Einde reviewpagina------------*/
 
@@ -329,20 +335,24 @@ form input[type=submit] {
 /*------------Einde Accountpagina------------*/
 
 /*------------Begin Winkelwagen------------*/
+
+#product1, #product2, #product3 {
+    text-align: center;
+    max-width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
 #product1 img, #product2 img, #product3 img {
     height: 180px;
-    width: 170px;
+    width: 100px;
     float: left;
-    margin-left: 420px;
     margin-top: 25px;
 }
 
 #product h2 {
     font-family: Poppins, sans-serif;
     font-size: 24px;
-    padding-left: 30px;
-    height: 50px;
-    display: inline;
 }
 
 #aantalBrute input[type=number]{
@@ -350,31 +360,18 @@ form input[type=submit] {
     width: 90px;
     font-family: Poppins, sans-serif;
     font-size: 24px;
-    margin-left: 130px;
-    margin-top: 95px;
-    display:inline;
-}
-
-#aantalR {
-    margin-left: 160px;
-}
-
-#aantalRS {
-    margin-left: 230px;
 }
 
 #product1 p, #product2 p, #product3 p {
     font-family: nexa, sans-serif;
     font-size: 1.5em;
     display: inline;
-    margin-right: 85px;
 }
 
 hr {
     clear: left;
-    margin-left: 420px;
     padding-top: 20px;
-    width: 935px;
+    width: 100%;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -382,9 +379,12 @@ hr {
 
 /* Voor de betaalmethode */
 #headProduct {
+    text-align: right;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
     font-family: Nexa, sans-serif;
     font-size: 24px;
-    margin-left: 1150px;
     margin-top: 50px;
 }
 
