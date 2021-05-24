@@ -1,17 +1,20 @@
 @font-face {
     font-family: 'Nexa';
     src: url('../fonts/Nexa/NexaLight.otf');
+    font-weight: normal;
 }
 
 @font-face {
     font-family: 'Nexa';
     src: url('../fonts/Nexa/NexaBold.otf');
+    font-weight: bold;
 }
 
 body {
     background-color: #000000;
     color: #ffffff;
     font-family: "Nexa", Helvetica, Arial, sans-serif;
+    font-weight: lighter;
 }
 
 h1, h2 {
