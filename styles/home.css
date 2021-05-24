@@ -1,25 +1,17 @@
 @font-face {
     font-family: 'Nexa';
-    src: url('../font/Nexa/NexaLight.otf');
-    font-style: normal;
-    font-weight: normal;
+    src: url('../fonts/Nexa/NexaLight.otf');
 }
 
 @font-face {
     font-family: 'Nexa';
-    src: url('../font/Nexa/NexaBold.otf');
-    font-style: normal;
-    font-weight: bold;
+    src: url('../fonts/Nexa/NexaBold.otf');
 }
 
 body {
     background-color: #000000;
     color: #ffffff;
     font-family: "Nexa", Helvetica, Arial, sans-serif;
-}
-
-main {
-    margin-bottom: 100px;
 }
 
 h1, h2 {
@@ -29,6 +21,8 @@ h1, h2 {
 /*----------Begin van de navbar------------*/
 
 #topNav {
+    font-family: "Nexa", Helvetica, sans-serif;
+    font-weight: bold;
     list-style-type: none;
     overflow: hidden;
     background-color: #000000;
@@ -128,12 +122,12 @@ h1, h2 {
 /*------------Begin content home------------*/
 
 #contentBox1, #contentBox2, #contentBox3 {
-    box-sizing: border-box;
     width: 50%;
     margin-top: 100px;
     padding: 1px 1px 1px 1px;
     margin-left: 25%;
     margin-right: 25%;
+    clear: both;
 }
 
 #contentBox1 h2, #contentBox2 h2, #contentBox3 h2 {
@@ -145,15 +139,16 @@ h1, h2 {
 
 #imgHome1, #imgHome2, #imgHome3 {
     float: left;
-    max-width: 300px;
+    max-width: 30%;
     max-height: 300px;
     margin-right: 50px;
 }
 
 #contentBox1 p, #contentBox2 p, #contentBox3 p {
-    margin-top: 50px;
-    margin-right: 20%;
-    text-align: center;
+    margin-top: 5%;
+    max-width: 60%;
+    float: right;
+    overflow: hidden;
 }
 
 /*----------Einde content home------------*/
@@ -239,7 +234,40 @@ h1, h2 {
 
 /*--------- Begin opmaak Events --------------*/
 
+#contentBoxEvent1, #contentBoxEvent2, #contentBoxEvent3 {
+    box-sizing: border-box;
+    width: 50%;
+    margin-top: 100px;
+    padding: 1px 1px 1px 1px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
 
+#contentBoxEvent1 h2, #contentBoxEvent2 h2, #contentBoxEvent3 h2 {
+	text-align: center;
+    color:orange;
+    font-family: "Nexa", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+}
+
+#imgEvent1, #imgEvent2, #imgEvent3 {
+    float: left;
+    max-width: 300px;
+    max-height: 300px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+}
+
+#contentEvent input[type=submit] {
+    float: right;
+	height: 45px;
+    max-width: 210px;
+	background-color: orange;
+	border: 0px;
+	font-family: Nexa, sans-serif;
+	font-size: 16px;
+    margin-bottom: 100px;
+}
 
 
 /*------------Einde opmaak Events------------*/
@@ -337,72 +365,72 @@ form input[type=submit] {
 /*------------Begin Winkelwagen------------*/
 
 #product1, #product2, #product3 {
-    text-align: center;
-    max-width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
 }
 
-#product1 img, #product2 img, #product3 img {
+#product1info {
+    float: right;
+}
+
+#product1info 
+
+#product1info2 {
+
+
+}
+
+#product1img {
+    width: 120px;
+    float: left;
+}
+
+#product2img, #product3img {
     height: 180px;
     width: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     float: left;
-    margin-top: 25px;
 }
 
 #product h2 {
-    font-family: Poppins, sans-serif;
-    font-size: 24px;
+
 }
 
 #aantalBrute input[type=number]{
     height: 40px;
     width: 90px;
-    font-family: Poppins, sans-serif;
-    font-size: 24px;
+    float: right;
 }
 
 #product1 p, #product2 p, #product3 p {
-    font-family: nexa, sans-serif;
     font-size: 1.5em;
     display: inline;
+    float: right;
 }
 
-hr {
-    clear: left;
-    padding-top: 20px;
-    width: 100%;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-}
-
-/* Voor de betaalmethode */
 #headProduct {
-    text-align: right;
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
-    font-family: Nexa, sans-serif;
-    font-size: 24px;
     margin-top: 50px;
+    font-size: 24px;
 }
 
-#afrekenen{
+#afrekenen {
     width: 140px;
     height: 60px;
-    font-family: nexa, sans-serif;
     font-size: 24px;
     background-color: orange;
     border: 0px;
-    margin-left: 1220px;
-    margin-top: 25px;
+    margin-top: 200px;
+    margin-right: 25%;
     display: inline;
 }
 
 a {
     text-decoration: none;
-
 }
 
 
@@ -415,17 +443,17 @@ footer {
 	background-color: orange;
 	font-size: 1em;
     color: #000000;
-    font-family: nexa, sans-serif;
     justify-content: space-evenly;
     width: 100%;
-    position: relative;    
+    position: relative;
+    font-weight: bold;
 }
  
 footer li{
     list-style: none;
 }
 
-#footerInfo, footerNavList {
+#footerInfo {
     display: flex;
     justify-content: space-around;
     align-content: center;
