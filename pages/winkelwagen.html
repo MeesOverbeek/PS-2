@@ -34,29 +34,40 @@
                         <h2>Aantal</h2>
                         <input type="number" name="aantal" id="aantal" step="1" min="1" max="100" value="1"/>
                     </aside>
+                </article>
                 
                 <!-- tweede product -->
                 <article id="product2">
-                    <img id="product2img" src="../afbeeldingen/bieren/refresh.jpg" />
-                    <h2>Ref5resh</h2>
-                    <input type="number" name="aantalR" id="aantalR" step="1" min="1" max="100" value="1" onclick="add(this,80,sum2);"/>
-                    <p>x</p>
-                    <p>&euro;<span id="price2">2</span></p>
+                    <aside id="product2img">
+                        <img src="../afbeeldingen/bieren/Wildcard.png"/>
+                    </aside>
+                    <aside id="product2info">
+                        <h1>Wildcard</h1>
+                        <h2>Prijs &euro;2 per stuk</h2>
+                        <h2>Aantal</h2>
+                        <input type="number" name="aantal" id="aantal" step="1" min="1" max="100" value="1"/>
+                    </aside>
                 </article>
                 
-                <!-- derde product -->
+                    <!-- derde product -->
                 <article id="product3">
-                    <img id="product3img" src="../afbeeldingen/bieren/RSI.png" />
-                    <h2>RSI</h2>
-                    <input type="number" name="aantalRS" id="aantalRS" step="1" min="1" max="100" value="2" onclick="add(this,70,sum3);"/>
-                    <p>x</p>
-                    <p>&euro;<span id="price3">2</span></p>
+                    <aside id="product3img">
+                        <img src="../afbeeldingen/bieren/bruteforce.jpg"/>
+                    </aside>
+                    <aside id="product3info">
+                        <h1>Bruteforce</h1>
+                        <h2>Prijs &euro;2 per stuk</h2>
+                        <h2>Aantal</h2>
+                        <input type="number" name="aantal" id="aantal" step="1" min="1" max="100" value="1"/>
+                    </aside>
                 </article>
                 
                 <!-- De totaalprijs
                 niet voor elkaar gekregen om deze in realtime te laten werken.-->
-                <h3 id="headProduct">Totaal: &euro;<span id="total">10</span></h3>
-                <a href="../index.html"><button id="afrekenen" onclick="alertBox()">Afrekenen</button></a>
+                <div id="winkelwagenTotaal">
+                    <h3 id="headProduct">Totaal: &euro;<span id="total">10</span></h3>
+                    <a href="../index.html"><button id="afrekenen" onclick="alertBox()">Afrekenen</button></a>
+                </div>
 			</main>
 
             <footer>
